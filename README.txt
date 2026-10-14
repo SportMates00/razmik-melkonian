@@ -44,3 +44,14 @@ razmikmelkonian17@gmail.com
 
 The street address and phone number from the teaching profile were intentionally
 not published on the public website.
+
+
+YOUTUBE PLAYER FIX
+All embedded YouTube iframes were replaced with linked video thumbnails.
+This avoids YouTube Error 153 when the site is opened locally with file://
+or in browsers/environments that do not provide the required referrer.
+Each card opens the exact video on YouTube in a new tab.
+
+SOCIAL LINKS
+YouTube: https://www.youtube.com/@razmikmelkonian
+Instagram: https://www.instagram.com/razmik__melkonian/
