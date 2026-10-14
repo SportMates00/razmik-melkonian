@@ -137,7 +137,27 @@ h3{font-size:clamp(26px,3vw,40px)}
 .media-item:after{
   content:"PLACEHOLDER";position:absolute;left:16px;bottom:13px;color:#fff9;font-size:10px;letter-spacing:.16em
 }
+
+.video-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:42px 24px;
+}
 .video-card{border-top:1px solid var(--line);padding-top:16px}
+.video-card h3{font-size:clamp(22px,2.2vw,32px);margin-top:18px}
+.video-embed{
+  width:100%;
+  aspect-ratio:16/9;
+  background:#171717;
+  overflow:hidden;
+}
+.video-embed iframe{
+  width:100%;
+  height:100%;
+  border:0;
+  display:block;
+}
+
 .video-thumb{aspect-ratio:16/9;background:#222;display:flex;align-items:center;justify-content:center;color:#eee}
 .programme{
   display:grid;grid-template-columns:.35fr 1fr;gap:40px;
@@ -166,15 +186,147 @@ h3{font-size:clamp(26px,3vw,40px)}
 @media(max-width:900px){
   .hero,.feature,.grid-2,.section-head,.contact-grid,.programme{grid-template-columns:1fr}
   .hero{padding-top:0}.hero-art{min-height:55vh}.hero-copy{padding:70px 0 50px}
-  .grid-3,.meta-grid{grid-template-columns:1fr 1fr}
+  .grid-3,.meta-grid,.video-grid{grid-template-columns:1fr 1fr}
   .media-item,.media-item:nth-child(n){grid-column:span 12;min-height:300px}
   .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:var(--paper);padding:24px 28px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}
   .nav-links.open{display:flex}.menu-btn{display:block}
 }
 @media(max-width:560px){
-  .grid-3,.meta-grid{grid-template-columns:1fr}
+  .grid-3,.meta-grid,.video-grid{grid-template-columns:1fr}
   .section{padding:80px 20px}.page-hero{padding:80px 20px 55px}
   .hero{padding:0 20px 20px}.nav{padding:16px 20px}
   .footer{margin-top:20px;padding:24px 20px;flex-direction:column}
   .bio{font-size:21px}
+}
+
+
+/* ---- Final portfolio additions ---- */
+.hero-photo{
+  min-height:640px;
+  position:relative;
+  overflow:hidden;
+  background:#d8d1c6;
+}
+.hero-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 38%;
+  position:absolute;
+  inset:0;
+}
+.photo-feature{
+  min-height:560px;
+  overflow:hidden;
+  background:#ddd7cd;
+}
+.photo-feature img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 30%;
+}
+.photo-caption{
+  color:var(--muted);
+  font-size:12px;
+  margin-top:10px;
+  letter-spacing:.04em;
+}
+.video-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:52px 26px;
+}
+.video-card{
+  border-top:1px solid var(--line);
+  padding-top:16px;
+  min-width:0;
+}
+.video-card h3{
+  font-size:clamp(22px,2.2vw,32px);
+  margin-top:18px;
+  line-height:1.2;
+}
+.video-card .video-meta{
+  color:var(--muted);
+  margin-top:8px;
+  font-size:14px;
+}
+.video-embed{
+  width:100%;
+  aspect-ratio:16/9;
+  overflow:hidden;
+  background:#171717;
+}
+.video-embed iframe{
+  width:100%;
+  height:100%;
+  display:block;
+  border:0;
+}
+.video-loading{
+  font-size:13px;
+  color:var(--muted);
+}
+.playlist-hero{
+  max-width:var(--max);
+  margin:auto;
+  padding:80px 28px 0;
+}
+.playlist-embed{
+  width:100%;
+  aspect-ratio:16/9;
+  background:#171717;
+  overflow:hidden;
+}
+.playlist-embed iframe{
+  width:100%;
+  height:100%;
+  border:0;
+  display:block;
+}
+.kicker-link{
+  display:inline-flex;
+  gap:10px;
+  align-items:center;
+  margin-top:18px;
+  color:var(--muted);
+  font-size:14px;
+}
+.kicker-link:hover{color:var(--ink)}
+.home-video-row{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:48px;
+  align-items:center;
+}
+.home-video-copy p{color:var(--muted)}
+.contact-note{
+  font-size:13px;
+  color:var(--muted);
+  max-width:520px;
+  margin-top:18px;
+}
+.tag-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:20px;
+}
+.tag{
+  border:1px solid var(--line);
+  padding:7px 10px;
+  font-size:11px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+@media(max-width:900px){
+  .video-grid,.home-video-row{grid-template-columns:1fr}
+  .hero-photo{min-height:58vh}
+  .photo-feature{min-height:480px}
+}
+@media(max-width:560px){
+  .video-grid{grid-template-columns:1fr}
+  .playlist-hero{padding:58px 20px 0}
+  .hero-photo{min-height:52vh}
 }

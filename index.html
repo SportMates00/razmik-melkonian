@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Razmik Melkonian — Pianist, Répétiteur and Piano Teacher.">
+  <meta name="theme-color" content="#f3f0e9">
   <title>Home — Razmik Melkonian</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,14 +13,15 @@
 <header class="site-header">
   <nav class="nav">
     <a class="brand" href="index.html">RAZMIK MELKONIAN</a>
-    <button class="menu-btn" aria-label="Menu">☰</button>
+    <button class="menu-btn" aria-label="Open navigation" aria-expanded="false">☰</button>
     <div class="nav-links">
       <a class="active" href="index.html">Home</a>
-      <a class="" href="about.html">About</a>
-      <a class="" href="media.html">Media</a>
-      <a class="" href="programmes.html">Programmes</a>
-      <a class="" href="teaching.html">Teaching</a>
-      <a class="" href="contact.html">Contact</a>
+<a class="" href="about.html">About</a>
+<a class="" href="media.html">Media</a>
+<a class="" href="playlist.html">Playlist</a>
+<a class="" href="programmes.html">Programmes</a>
+<a class="" href="teaching.html">Teaching</a>
+<a class="" href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
@@ -30,10 +32,18 @@
     <div class="hero-copy">
       <div class="eyebrow">Pianist · Répétiteur · Piano Teacher</div>
       <h1>Razmik<br>Melkonian</h1>
-      <p class="hero-sub">Armenian pianist and collaborative musician based in the UK, working across solo performance, opera, chamber music and teaching.</p>
+      <p class="hero-sub">Armenian pianist and collaborative musician working across solo performance, opera, chamber music and teaching.</p>
+      <div class="tag-row">
+        <span class="tag">Solo piano</span>
+        <span class="tag">Collaborative piano</span>
+        <span class="tag">Opera</span>
+        <span class="tag">Teaching</span>
+      </div>
       <div><a class="btn" href="about.html">Discover more →</a></div>
     </div>
-    <div class="hero-art" role="img" aria-label="Portrait placeholder"></div>
+    <div class="hero-photo">
+      <img src="assets/razmik-portrait-indoor.jpg" alt="Portrait of Razmik Melkonian">
+    </div>
   </section>
 
   <section class="section">
@@ -42,10 +52,12 @@
       <div class="lead">A pianist shaped by performance, collaboration and a curiosity for the many ways music can be shared.</div>
     </div>
     <div class="feature">
-      <div class="placeholder-wide"></div>
+      <div>
+        <div class="photo-feature"><img src="assets/razmik-headshot-garden.jpg" alt="Razmik Melkonian outdoors"></div>
+      </div>
       <div>
         <h3>Performer & collaborator</h3>
-        <p class="muted">Razmik is a graduate of the Royal Academy of Music and the Royal Birmingham Conservatoire. His work spans recital performance, chamber music, song and opera.</p>
+        <p class="muted">Razmik is a graduate of the Royal Academy of Music and Royal Birmingham Conservatoire. His work spans recital performance, chamber music, song and opera.</p>
         <a class="btn" href="about.html">Read biography →</a>
       </div>
     </div>
@@ -53,21 +65,29 @@
 
   <section class="section compact">
     <div class="grid-3">
-      <div class="card"><div class="eyebrow">Selected project</div><h3>Music from Armenia</h3><p>Chamber music project celebrating Armenian musical voices. Full programme details coming soon.</p></div>
-      <div class="card"><div class="eyebrow">Selected recital</div><h3>St George Hanover Square</h3><p>London lunchtime piano recital. Repertoire and media to be added.</p></div>
+      <div class="card"><div class="eyebrow">Selected project</div><h3>Music from Armenia</h3><p>A chamber-music project exploring Armenian musical voices and repertoire.</p></div>
+      <div class="card"><div class="eyebrow">Selected recital</div><h3>St George’s Hanover Square</h3><p>Solo lunchtime recital in London featuring Liszt, Debussy, Armenian repertoire and Scriabin.</p></div>
       <div class="card"><div class="eyebrow">Teaching</div><h3>Individual, curious, creative</h3><p>Lessons for all ages and levels in Birmingham and online.</p><a class="btn" href="teaching.html">Teaching →</a></div>
     </div>
   </section>
 
   <section class="section">
     <div class="section-head">
-      <div class="section-number">02 — Media</div>
-      <div class="lead">Performances, rehearsals and projects — with video and gallery content ready to be replaced when final material arrives.</div>
+      <div class="section-number">02 — Listen & Watch</div>
+      <div class="lead">Solo repertoire, vocal collaborations and performance projects.</div>
     </div>
-    <div class="media-grid">
-      <div class="media-item"></div><div class="media-item"></div><div class="media-item"></div><div class="media-item"></div>
+    <div class="home-video-row">
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/IdbwWiuqcFk" title="Razmik Melkonian performance" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="home-video-copy">
+        <div class="eyebrow">Featured performance</div>
+        <h3>Selected video</h3>
+        <p>Watch a featured performance here, then explore the complete Media page or open the curated YouTube playlist.</p>
+        <a class="btn" href="media.html">All videos →</a>
+        <a class="kicker-link" href="playlist.html">Open playlist page →</a>
+      </div>
     </div>
-    <a class="btn" href="media.html">Explore media →</a>
   </section>
 </main>
 
@@ -75,8 +95,8 @@
 <footer class="footer">
   <div>© 2026 Razmik Melkonian</div>
   <div class="socials">
-    <a href="#" aria-label="Instagram">Instagram</a>
-    <a href="#" aria-label="YouTube">YouTube</a>
+    <a href="https://youtube.com/playlist?list=PLI7jfbZRQ79Y" target="_blank" rel="noopener">YouTube ↗</a>
+    <a href="mailto:razmikmelkonian17@gmail.com">Email</a>
   </div>
 </footer>
 <script src="script.js"></script>
