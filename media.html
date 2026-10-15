@@ -8,23 +8,22 @@
   <title>Media — Razmik Melkonian</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    .playlist-nota-art{
+    .playlist-sheet-poster{
+      position:relative;
+      display:block;
+      width:100%;
+      aspect-ratio:16/9;
+      overflow:hidden;
+      background:#eee;
+    }
+    .playlist-sheet-poster img{
       width:100%;
       height:100%;
-      min-height:320px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      flex-direction:column;
-      gap:12px;
-      background:linear-gradient(135deg,#171717 0%,#2b2925 48%,#5b5044 100%);
-      color:var(--paper);
-      font-family:Georgia,'Times New Roman',serif;
+      object-fit:cover;
+      display:block;
     }
-    .playlist-nota-art .nota-symbol{font-size:clamp(72px,12vw,150px);line-height:.8;font-weight:400}
-    .playlist-nota-art .nota-title{font-size:clamp(28px,4vw,52px);letter-spacing:-.02em}
-    .playlist-nota-art .nota-subtitle{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.65)}
-    @media(max-width:700px){.playlist-nota-art{min-height:240px}}
+    .playlist-copy{margin-top:22px}
+    .playlist-copy h3{margin-bottom:8px}
   </style>
 </head>
 <body>
@@ -168,16 +167,16 @@
     <div class="section-head">
       <div class="section-number">02 — Playlist</div>
     </div>
-    <a class="playlist-poster" href="https://youtube.com/playlist?list=PLI7jfbZRQ79Y" target="_blank" rel="noopener" aria-label="Open Razmik Melkonian YouTube playlist">
-      <div class="playlist-nota-art">
-        <div class="nota-symbol">𝄞</div>
-        <div class="nota-title">Nota</div>
-        <div class="nota-subtitle">Original playlist</div>
-      </div>
+    <a class="playlist-sheet-poster" href="https://youtube.com/playlist?list=PLI7jfbZRQ79Y" target="_blank" rel="noopener" aria-label="Open Piano Accompaniments playlist on YouTube">
+      <img src="https://i.ytimg.com/vi/e9CNbt-_q8U/hqdefault.jpg" alt="Sheet music thumbnail from the Piano Accompaniments playlist">
       <span class="youtube-play">▶</span>
       <span class="playlist-label">Open full playlist on YouTube</span>
     </a>
-    <a class="btn" href="https://youtube.com/playlist?list=PLI7jfbZRQ79Y" target="_blank" rel="noopener">Open playlist on YouTube ↗</a>
+    <div class="playlist-copy">
+      <h3>Piano Accompaniments</h3>
+      <p class="muted">Selected vocal and instrumental accompaniment recordings with Razmik Melkonian at the piano.</p>
+      <a class="btn" href="https://youtube.com/playlist?list=PLI7jfbZRQ79Y" target="_blank" rel="noopener">Open playlist on YouTube ↗</a>
+    </div>
   </section>
 
   <section class="section">
