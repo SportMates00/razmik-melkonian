@@ -7,6 +7,25 @@
   <meta name="theme-color" content="#f3f0e9">
   <title>Media — Razmik Melkonian</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .playlist-nota-art{
+      width:100%;
+      height:100%;
+      min-height:320px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+      gap:12px;
+      background:linear-gradient(135deg,#171717 0%,#2b2925 48%,#5b5044 100%);
+      color:var(--paper);
+      font-family:Georgia,'Times New Roman',serif;
+    }
+    .playlist-nota-art .nota-symbol{font-size:clamp(72px,12vw,150px);line-height:.8;font-weight:400}
+    .playlist-nota-art .nota-title{font-size:clamp(28px,4vw,52px);letter-spacing:-.02em}
+    .playlist-nota-art .nota-subtitle{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.65)}
+    @media(max-width:700px){.playlist-nota-art{min-height:240px}}
+  </style>
 </head>
 <body>
 
@@ -18,7 +37,6 @@
       <a class="" href="index.html">Home</a>
 <a class="" href="about.html">About</a>
 <a class="active" href="media.html">Media</a>
-<a class="" href="playlist.html">Playlist</a>
 <a class="" href="programmes.html">Programmes</a>
 <a class="" href="teaching.html">Teaching</a>
 <a class="" href="contact.html">Contact</a>
@@ -26,16 +44,14 @@
   </nav>
 </header>
 
-
 <main>
   <section class="page-hero">
     <div class="eyebrow">Media</div>
     <h2>Videos</h2>
   </section>
+
   <section class="section">
-
     <div class="video-grid">
-
       <article class="video-card">
         <a class="youtube-poster" href="https://www.youtube.com/watch?v=zYuRQZKVWyA" target="_blank" rel="noopener" aria-label="Watch Ghazaros Saryan — “Aria” | Piano Transcription by Razmik Melkonian on YouTube">
           <img src="https://i.ytimg.com/vi/zYuRQZKVWyA/hqdefault.jpg" alt="Ghazaros Saryan — “Aria” | Piano Transcription by Razmik Melkonian">
@@ -148,9 +164,25 @@
     </div>
   </section>
 
+  <section class="section" id="playlist">
+    <div class="section-head">
+      <div class="section-number">02 — Playlist</div>
+    </div>
+    <a class="playlist-poster" href="https://youtube.com/playlist?list=PLI7jfbZRQ79Y" target="_blank" rel="noopener" aria-label="Open Razmik Melkonian YouTube playlist">
+      <div class="playlist-nota-art">
+        <div class="nota-symbol">𝄞</div>
+        <div class="nota-title">Nota</div>
+        <div class="nota-subtitle">Original playlist</div>
+      </div>
+      <span class="youtube-play">▶</span>
+      <span class="playlist-label">Open full playlist on YouTube</span>
+    </a>
+    <a class="btn" href="https://youtube.com/playlist?list=PLI7jfbZRQ79Y" target="_blank" rel="noopener">Open playlist on YouTube ↗</a>
+  </section>
+
   <section class="section">
     <div class="section-head">
-      <div class="section-number">02 — Gallery</div>
+      <div class="section-number">03 — Gallery</div>
     </div>
     <div class="grid-2">
       <div>
@@ -162,7 +194,6 @@
     </div>
   </section>
 </main>
-
 
 <footer class="footer">
   <div>© 2026 Razmik Melkonian</div>
